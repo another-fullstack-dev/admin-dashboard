@@ -5,3 +5,23 @@
     margin: 0;
     padding: 0;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100vh;
+    grid-auto-rows: 0;
+}
+
+h1,
+ul {
+    margin-bottom: 32px;
+}
+
+.sidebar {
+    padding: 12px;
+}
+
+li {
+    margin-bottom: 8px;
+}
