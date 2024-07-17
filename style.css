@@ -45,3 +45,17 @@ li {
 .hello {
     margin-right: auto;
 }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 2f1;
+}
+
+.content-side {
+    grid-column-start: 3;
+}
