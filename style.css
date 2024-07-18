@@ -23,6 +23,27 @@ ul {
     margin-bottom: 32px;
 }
 
+h1 {
+    margin: auto;
+    margin-left: 0;
+}
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+img {
+    width: 32px;
+    height: auto;
+}
+
+.sidebar-logo > img {
+    width: 64px;
+    height: auto;
+}
+
 ul {
     list-style: none;
 }
@@ -30,10 +51,15 @@ ul {
 .sidebar {
     padding: 12px;
     background-color: #0f172a;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 li {
     margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .header {
