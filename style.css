@@ -67,6 +67,8 @@ li {
     background-color: #94a3b8;
     padding-left: 24px;
     padding-right: 24px;
+    box-shadow: #0f172a 0px 10px 5px;
+    z-index: 1;
 }
 
 .header * {
@@ -85,6 +87,18 @@ li {
     justify-content: space-between;
 }
 
+.header-bot {
+    padding-bottom: 24px;
+}
+
+button {
+    width: 125px;
+    background-color: #1e293b;
+    color: #f1f5f9;
+    border: 0;
+    border-radius: 18px;
+}
+
 input {
     width: 700px;
     height: 30px;
@@ -101,6 +115,12 @@ input {
 
 .hello {
     margin-right: auto;
+    display: flex;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 48px;
 }
 
 .cards {
