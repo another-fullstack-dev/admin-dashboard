@@ -66,14 +66,33 @@ li {
     margin-bottom: 24px;
     background-color: #94a3b8;
     padding-left: 24px;
+    padding-right: 24px;
 }
 
-.header-top > * {
-    display: inline;
+.header * {
+    font-weight: bold;
+}
+
+.header-top > div {
+    display: flex;
+    align-items: center;
 }
 
 .header-top {
     margin-bottom: 24px;
+    display: flex;
+    padding-top: 24px;
+    justify-content: space-between;
+}
+
+input {
+    width: 700px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #1e293b;
+    color: #f1f5f9;
+    border: 0;
+    padding: 8px;
 }
 
 .header-bot {
