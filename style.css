@@ -1,3 +1,5 @@
+/* terrible design ahead */
+
 *,
 *::before,
 *::after {
@@ -9,6 +11,8 @@
 body {
     color: #f1f5f9;
     font-family: "Roboto", sans-serif;
+    overflow: auto;
+    background-color: #1e293b;
 }
 
 .wrapper {
@@ -68,7 +72,6 @@ li {
     padding-left: 24px;
     padding-right: 24px;
     box-shadow: #0f172a 0px 10px 5px;
-    z-index: 1;
 }
 
 .header * {
@@ -118,6 +121,10 @@ input {
     display: flex;
 }
 
+.hello > div > :first-child {
+    font-size: 12px;
+}
+
 .action-buttons {
     display: flex;
     gap: 48px;
@@ -132,10 +139,16 @@ input {
 }
 
 .cards > div,
-.announce > div,
 .trending > div {
     background-color: #94a3b8;
     padding: 24px;
+    box-shadow: #0f172a 0px 10px 5px;
+}
+
+.cards > div {
+    border-left: solid #f1f5f9 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .content {
@@ -144,6 +157,13 @@ input {
     grid-template-rows: 20px 4fr;
     column-gap: 24px;
     padding-left: 24px;
+    padding-right: 24px;
+}
+
+.content > :first-child,
+.trending > :first-child,
+.two {
+    font-weight: bold;
 }
 
 .two {
@@ -153,6 +173,12 @@ input {
 .content-side {
     grid-column-start: 3;
     grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-side > * {
+    flex: 1;
 }
 
 .right-root {
@@ -165,4 +191,41 @@ input {
 
 .announce {
     margin-bottom: 24px;
+    background-color: #94a3b8;
+}
+
+.announce > div {
+    padding: 24px;
+}
+
+.cards > div > :first-child {
+    font-weight: bold;
+    font-size: 24px;
+    color: #1e293b;
+}
+
+.cards > div > :nth-child(2) {
+    margin-bottom: 64px; /* ??? */
+}
+
+.cards > div > div {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+}
+
+.announce > div > :first-child {
+    font-weight: bold;
+    color: #1e293b;
+}
+
+.announce > span {
+    display: block; /* 💀 */
+    width: 392px;
+    margin: auto;
+    border-bottom: 2px gray solid;
+}
+
+.trending > div {
+    display: flex;
 }
